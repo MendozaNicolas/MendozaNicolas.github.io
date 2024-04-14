@@ -20,15 +20,15 @@ export default function Home() {
           </div>
         </div>
         <div className="hidden md:flex h-full w-6/12 flex-col p-32 gap-5">
-          <figure><Image src="/landing0.svg" alt="A person coding" /></figure>
+          <figure><Image src="/landing0.svg" width={1000} height={1000} alt="A person coding" /></figure>
         </div>
       </section>
       <div className="w-full flex justify-center my-3">
         <h2 id="proyectos" className="text-4xl">Mis proyectos</h2>
       </div>
-      <section className="w-screen p-5 flex flex-row flex-wrap gap-10 md:p-24">
+      <section className="w-screen p-5 flex flex-row flex-wrap gap-8 md:p-20">
         <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><Image src="/projects/yam-landing.png" alt="Yet Another Minifier" /></figure>
+          <figure><Image src="/projects/yam-landing.png" width={1000} height={1000} alt="Yet Another Minifier" /></figure>
           <div className="card-body">
             <h2 className="card-title">
               Yet Another Minifier
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><Image src="/projects/capybara-landing.png" alt="Capybara run" /></figure>
+          <figure><Image src="/projects/capybara-landing.png" width={1000} height={100} alt="Capybara run" /></figure>
           <div className="card-body">
             <h2 className="card-title">
               CaPYbara run
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><Image src="/projects/rufus-landing.png" alt="Rufus Player" /></figure>
+          <figure><Image src="/projects/rufus-landing.png" width={1000} height={1000} alt="Rufus Player" /></figure>
           <div className="card-body">
             <h2 className="card-title">
               Rufus Player
@@ -84,7 +84,7 @@ export default function Home() {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><Image src="/projects/yeti-landing.png" alt="Yeti Heladeria" /></figure>
+          <figure><Image src="/projects/yeti-landing.png" width={1000} height={1000} alt="Yeti Heladeria" /></figure>
           <div className="card-body">
             <h2 className="card-title">
               Yeti Heladeria
@@ -101,7 +101,7 @@ export default function Home() {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><Image src="/projects/ficus-landing.png" alt="Laravel Ficus" /></figure>
+          <figure><Image src="/projects/ficus-landing.png" width={1000} height={1000} alt="Laravel Ficus" /></figure>
           <div className="card-body">
             <h2 className="card-title">
               Laravel Ficus
@@ -125,63 +125,63 @@ export default function Home() {
       </div>
       <section className="p-24 w-screen flex flex-row flex-wrap gap-10">
         <div className="hidden h-full w-screen justify-center flex-col gap-5 md:flex md:w-6/12 md:p-32">
-          <figure><Image src="/landing1.svg" alt="A person coding" /></figure>
+          <figure><Image src="/landing1.svg" width={1000} height={1000} alt="A person coding" /></figure>
         </div>
         <div className="flex justify-center h-full w-screen flex-row gap-5 flex-wrap md:flex md:w-5/12 md:p-16">
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/html.svg" alt="HTML brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <figure><Image src="/skills/html.svg" width={1000} height={1000} alt="HTML brand" loading="lazy" className="w-14 aspect-square" /></figure>
             <p className="text-center">HTML</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/css.svg" alt="CSS brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <figure><Image src="/skills/css.svg" width={1000} height={1000} alt="CSS brand" loading="lazy" className="w-14 aspect-square" /></figure>
             <p className="text-center">CSS</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/php.svg" alt="PHP brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <figure><Image src="/skills/php.svg" width={1000} height={1000} alt="PHP brand" loading="lazy" className="w-14 aspect-square" /></figure>
             <p className="text-center">PHP</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/javascript.svg" alt="Javascript brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <figure><Image src="/skills/javascript.svg" width={1000} height={1000} alt="Javascript brand" loading="lazy" className="w-14 aspect-square" /></figure>
             <p className="text-center">JavaScript</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/tailwindcss.svg" alt="Tailwindcss brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <figure><Image src="/skills/tailwindcss.svg" width={1000} height={1000} alt="Tailwindcss brand" loading="lazy" className="w-14 aspect-square" /></figure>
             <p className="text-center">Tailwind</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/nodejs.svg" alt="NodeJS brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <figure><Image src="/skills/nodejs.svg" width={1000} height={1000} alt="NodeJS brand" loading="lazy" className="w-14 aspect-square" /></figure>
             <p className="text-center">NodeJS</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/bootstrap.svg" alt="Bootstrap brand" loading="lazy" className="w-16 h-14 aspect-square" /></figure>
+            <figure><Image src="/skills/bootstrap.svg" width={1000} height={1000} alt="Bootstrap brand" loading="lazy" className="w-16 h-14 aspect-square" /></figure>
             <p className="text-center">Bootstrap</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/nextjs.svg" alt="NextJS brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <figure><Image src="/skills/nextjs.svg" width={1000} height={1000} alt="NextJS brand" loading="lazy" className="w-14 aspect-square" /></figure>
             <p className="text-center">NextJS</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/laravel.svg" alt="Laravel brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <figure><Image src="/skills/laravel.svg" width={1000} height={1000} alt="Laravel brand" loading="lazy" className="w-14 aspect-square" /></figure>
             <p className="text-center">Laravel</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/git.svg" alt="Git brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <figure><Image src="/skills/git.svg" width={1000} height={1000} alt="Git brand" loading="lazy" className="w-14 aspect-square" /></figure>
             <p className="text-center">Git</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/flutter.svg" alt="Flutter brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <figure><Image src="/skills/flutter.svg" width={1000} height={1000} alt="Flutter brand" loading="lazy" className="w-14 aspect-square" /></figure>
             <p className="text-center">Flutter</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/dart.svg" alt="Dart brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <figure><Image src="/skills/dart.svg" width={1000} height={1000} alt="Dart brand" loading="lazy" className="w-14 aspect-square" /></figure>
             <p className="text-center">Dart</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/python.svg" alt="Python brand" loading="lazy" className="w-12 h-14 aspect-square" /></figure>
+            <figure><Image src="/skills/python.svg" width={1000} height={1000} alt="Python brand" loading="lazy" className="w-12 h-14 aspect-square" /></figure>
             <p className="text-center">Python</p>
           </div>
           <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
-            <figure><Image src="/skills/unity.svg" alt="Unity brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <figure><Image src="/skills/unity.svg" width={1000} height={1000} alt="Unity brand" loading="lazy" className="w-14 aspect-square" /></figure>
             <p className="text-center">Unity</p>
           </div>
         </div>
