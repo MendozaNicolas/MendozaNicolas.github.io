@@ -1,113 +1,194 @@
 import Image from "next/image";
+import Navbar from "@/components/navbar"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="bg-base-200 overflow-x-hidden">
+      <Navbar />
+      <section className="w-screen h-screen flex flex-row flex-wrap md:flex-nowrap">
+        <div className="w-screen h-full flex flex-col p-10 gap-5 md:p-32 md:w-8/12">
+          <h1 className="text-2xl">Hola soy, <br /> <span className="text-5xl text-pink-600 font-bold">Nicolás Mendoza</span></h1>
+          <p className="text-lg">
+            Saludos! Soy un apasionado desarrollador web full-stack con más de seis meses de experiencia práctica.
+            Disfruto convirtiendo ideas en experiencias digitales perfectas. Con experiencia en trabajo independiente,
+            aporto una trayectoria comprobada de mis aprendizajes y trabajos realizados.
+            ¡Creemos algo extraordinario juntos!
+          </p>
+          <div>
+            <a href="/mendozaCV.pdf" class="btn btn-secondary mx-5">Curriculum</a>
+            <a href="#proyectos" class="btn btn-neutral mx-5">Mis proyectos</a>
+          </div>
         </div>
+        <div className="hidden md:flex h-full w-6/12 flex-col p-32 gap-5">
+          <figure><Image src="/landing0.svg" alt="A person coding" /></figure>
+        </div>
+      </section>
+      <div className="w-full flex justify-center my-3">
+        <h2 id="proyectos" className="text-4xl">Mis proyectos</h2>
       </div>
+      <section className="w-screen p-5 flex flex-row flex-wrap gap-10 md:p-24">
+        <div className="card w-96 bg-base-100 shadow-xl">
+          <figure><Image src="/projects/yam-landing.png" alt="Yet Another Minifier" /></figure>
+          <div className="card-body">
+            <h2 className="card-title">
+              Yet Another Minifier
+              <div className="badge badge-secondary">Nuevo</div>
+            </h2>
+            <p>A JS and CSS documents and code minifier for optimizations.</p>
+            <div className="card-actions">
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">NextJS</div>
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">TailwindCSS</div>
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">SCSS</div>
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">JavaScript</div>
+            </div>
+            <div className="card-actions justify-center mt-5">
+              <a href="https://mendozanicolas.github.io/yet-another-minifier" className="btn btn-primary">Ver proyecto</a>
+              <a href="https://github.com/MendozaNicolas/yet-another-minifier" className="btn btn-primary">Ver código</a>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+            </div>
+          </div>
+        </div>
+        <div className="card w-96 bg-base-100 shadow-xl">
+          <figure><Image src="/projects/capybara-landing.png" alt="Capybara run" /></figure>
+          <div className="card-body">
+            <h2 className="card-title">
+              CaPYbara run
+            </h2>
+            <p>Juego creado en python utilizando la libreria pygame</p>
+            <div className="card-actions">
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">Python</div>
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">Pygame</div>
+            </div>
+            <div className="card-actions justify-center mt-5">
+              <a href="https://github.com/MendozaNicolas/caPYbara-game" className="btn btn-primary">Ver proyecto</a>
+              <a href="https://github.com/MendozaNicolas/caPYbara-game" className="btn btn-primary">Ver código</a>
+            </div>
+          </div>
+        </div>
+        <div className="card w-96 bg-base-100 shadow-xl">
+          <figure><Image src="/projects/rufus-landing.png" alt="Rufus Player" /></figure>
+          <div className="card-body">
+            <h2 className="card-title">
+              Rufus Player
+              <div className="badge badge-warning">Incompleto</div>
+            </h2>
+            <p>Aplicacion Mobile creada en Flutter: Reproductor multimedia que funciona mediante URL de Youtube</p>
+            <div className="card-actions">
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">Flutter</div>
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">Dart</div>
+            </div>
+            <div className="card-actions justify-center mt-5">
+              <a href="https://mendozanicolas.github.io/yeti-app/" className="btn btn-primary">Ver proyecto</a>
+              <a href="https://github.com/MendozaNicolas/yeti-app" className="btn btn-primary">Ver código</a>
+            </div>
+          </div>
+        </div>
+        <div className="card w-96 bg-base-100 shadow-xl">
+          <figure><Image src="/projects/yeti-landing.png" alt="Yeti Heladeria" /></figure>
+          <div className="card-body">
+            <h2 className="card-title">
+              Yeti Heladeria
+            </h2>
+            <p>Landing Page de heladeria hecha con ReactJS y Bootstrap</p>
+            <div className="card-actions">
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">Bootstrap</div>
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">SCSS</div>
+            </div>
+            <div className="card-actions justify-center mt-5">
+              <a href="https://mendozanicolas.github.io/yeti-app/" className="btn btn-primary">Ver proyecto</a>
+              <a href="https://github.com/MendozaNicolas/yeti-app" className="btn btn-primary">Ver código</a>
+            </div>
+          </div>
+        </div>
+        <div className="card w-96 bg-base-100 shadow-xl">
+          <figure><Image src="/projects/ficus-landing.png" alt="Laravel Ficus" /></figure>
+          <div className="card-body">
+            <h2 className="card-title">
+              Laravel Ficus
+            </h2>
+            <p>Yet another Laravel CRUD project, made from scratch with Laravel.</p>
+            <div className="card-actions">
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">Laravel</div>
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">Bootstrap</div>
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">PHP</div>
+              <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">JavaScript</div>
+            </div>
+            <div className="card-actions justify-center mt-5">
+              <a href="https://mendozanicolas.github.io/laravel-ficus/" className="btn btn-primary">Ver proyecto</a>
+              <a href="https://github.com/MendozaNicolas/laravel-ficus" className="btn btn-primary">Ver código</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="w-full flex justify-center my-3">
+        <h2 className="text-4xl">Mis conocimientos</h2>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section className="p-24 w-screen flex flex-row flex-wrap gap-10">
+        <div className="hidden h-full w-screen justify-center flex-col gap-5 md:flex md:w-6/12 md:p-32">
+          <figure><Image src="/landing1.svg" alt="A person coding" /></figure>
+        </div>
+        <div className="flex justify-center h-full w-screen flex-row gap-5 flex-wrap md:flex md:w-5/12 md:p-16">
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/html.svg" alt="HTML brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <p className="text-center">HTML</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/css.svg" alt="CSS brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <p className="text-center">CSS</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/php.svg" alt="PHP brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <p className="text-center">PHP</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/javascript.svg" alt="Javascript brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <p className="text-center">JavaScript</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/tailwindcss.svg" alt="Tailwindcss brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <p className="text-center">Tailwind</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/nodejs.svg" alt="NodeJS brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <p className="text-center">NodeJS</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/bootstrap.svg" alt="Bootstrap brand" loading="lazy" className="w-16 h-14 aspect-square" /></figure>
+            <p className="text-center">Bootstrap</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/nextjs.svg" alt="NextJS brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <p className="text-center">NextJS</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/laravel.svg" alt="Laravel brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <p className="text-center">Laravel</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/git.svg" alt="Git brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <p className="text-center">Git</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/flutter.svg" alt="Flutter brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <p className="text-center">Flutter</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/dart.svg" alt="Dart brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <p className="text-center">Dart</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/python.svg" alt="Python brand" loading="lazy" className="w-12 h-14 aspect-square" /></figure>
+            <p className="text-center">Python</p>
+          </div>
+          <div className="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0">
+            <figure><Image src="/skills/unity.svg" alt="Unity brand" loading="lazy" className="w-14 aspect-square" /></figure>
+            <p className="text-center">Unity</p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div className="flex items-center justify-center p-5"><span>❤ Hecho con amor por Nicolás Mendoza. ❤</span></div>
+      </footer>
     </main>
   );
 }
