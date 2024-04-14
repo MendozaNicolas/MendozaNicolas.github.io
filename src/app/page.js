@@ -28,7 +28,7 @@ export default function Home() {
       </div>
       <section className="w-screen p-5 flex flex-row flex-wrap gap-8 md:p-20">
         <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><Image src="/projects/yam-landing.png" width={1000} height={1000} alt="Yet Another Minifier" /></figure>
+          <figure><Image src="/projects/yam-landing.webp" width={1000} height={1000} alt="Yet Another Minifier" /></figure>
           <div className="card-body">
             <h2 className="card-title">
               Yet Another Minifier
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><Image src="/projects/capybara-landing.png" width={1000} height={100} alt="Capybara run" /></figure>
+          <figure><Image src="/projects/capybara-landing.webp" width={1000} height={100} alt="Capybara run" /></figure>
           <div className="card-body">
             <h2 className="card-title">
               CaPYbara run
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><Image src="/projects/rufus-landing.png" width={1000} height={1000} alt="Rufus Player" /></figure>
+          <figure><Image src="/projects/rufus-landing.webp" width={1000} height={1000} alt="Rufus Player" /></figure>
           <div className="card-body">
             <h2 className="card-title">
               Rufus Player
@@ -84,7 +84,7 @@ export default function Home() {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><Image src="/projects/yeti-landing.png" width={1000} height={1000} alt="Yeti Heladeria" /></figure>
+          <figure><Image src="/projects/yeti-landing.webp" width={1000} height={1000} alt="Yeti Heladeria" /></figure>
           <div className="card-body">
             <h2 className="card-title">
               Yeti Heladeria
@@ -101,7 +101,7 @@ export default function Home() {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><Image src="/projects/ficus-landing.png" width={1000} height={1000} alt="Laravel Ficus" /></figure>
+          <figure><Image src="/projects/ficus-landing.webp" width={1000} height={1000} alt="Laravel Ficus" /></figure>
           <div className="card-body">
             <h2 className="card-title">
               Laravel Ficus
