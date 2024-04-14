@@ -78,8 +78,8 @@ export default function Home() {
               <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">Dart</div>
             </div>
             <div className="card-actions justify-center mt-5">
-              <a href="https://mendozanicolas.github.io/yeti-app/" className="btn btn-primary">Ver proyecto</a>
-              <a href="https://github.com/MendozaNicolas/yeti-app" className="btn btn-primary">Ver código</a>
+              <a href="https://github.com/MendozaNicolas/rufus_player" className="btn btn-primary">Ver proyecto</a>
+              <a href="https://github.com/MendozaNicolas/rufus_player" className="btn btn-primary">Ver código</a>
             </div>
           </div>
         </div>
