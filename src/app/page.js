@@ -26,7 +26,7 @@ export default function Home() {
       <div className="w-full flex justify-center my-3">
         <h2 id="proyectos" className="text-4xl">Mis proyectos</h2>
       </div>
-      <section className="w-screen p-5 flex flex-row flex-wrap gap-8 md:p-20">
+      <section className="w-screen p-5 flex flex-row flex-wrap gap-8 sm:justify-center sm:gap-10 md:p-20">
         <div className="card w-96 bg-base-100 shadow-xl">
           <figure><Image src="/projects/yam-landing.webp" width={1000} height={1000} alt="Yet Another Minifier" /></figure>
           <div className="card-body">
