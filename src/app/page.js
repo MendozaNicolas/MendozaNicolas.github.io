@@ -24,6 +24,30 @@ export default function Home() {
         </div>
       </section>
       <div className="w-full flex justify-center my-3">
+        <h2 id="proyectos" className="text-4xl">Experiencia Laboral</h2>
+      </div>
+      <section className="w-screen p-5 flex flex-row flex-wrap gap-8 sm:justify-center sm:gap-10 md:p-20">
+        <div>
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <figure><Image src="/projects/berisso.webp" width={1000} height={1000} alt="Municipalidad de berisso" /></figure>
+            <div className="card-body">
+              <h2 className="card-title">
+                Municipalidad de Berisso
+              </h2>
+              <p>Actualmente trabajo en la municipalidad de Berisso como programador de sistemas municipales utilizando Laravel, PHP, Bootstrap y JavaScript.</p>
+              <b>Noviembre de 2023 - Actualmente</b>
+              <div className="card-actions mt-5">
+                <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">Laravel</div>
+                <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">Bootstrap</div>
+                <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">SCSS</div>
+                <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">JavaScript</div>
+                <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">PHP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="w-full flex justify-center my-3">
         <h2 id="proyectos" className="text-4xl">Mis proyectos</h2>
       </div>
       <section className="w-screen p-5 flex flex-row flex-wrap gap-8 sm:justify-center sm:gap-10 md:p-20">
@@ -34,7 +58,7 @@ export default function Home() {
               Yet Another Minifier
               <div className="badge badge-secondary">Nuevo</div>
             </h2>
-            <p>A JS and CSS documents and code minifier for optimizations.</p>
+            <p>Minificador de archivos JS y CSS para optimizar el rendimiento de las paginas.</p>
             <div className="card-actions">
               <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">NextJS</div>
               <div className="badge hover:badge-secondary hover:badge-outline badge-outline select-none">TailwindCSS</div>
@@ -44,7 +68,6 @@ export default function Home() {
             <div className="card-actions justify-center mt-5">
               <a href="https://mendozanicolas.github.io/yet-another-minifier" className="btn btn-primary">Ver proyecto</a>
               <a href="https://github.com/MendozaNicolas/yet-another-minifier" className="btn btn-primary">Ver código</a>
-
             </div>
           </div>
         </div>
