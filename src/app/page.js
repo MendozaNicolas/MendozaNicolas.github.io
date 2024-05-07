@@ -15,8 +15,8 @@ export default function Home() {
             ¡Creemos algo extraordinario juntos!
           </p>
           <div>
-            <a href="/mendozaCV.pdf" class="btn btn-secondary mx-5">Curriculum</a>
-            <a href="#proyectos" class="btn btn-neutral mx-5">Mis proyectos</a>
+            <a href="/mendozaCV.pdf" className="btn btn-secondary mx-5">Curriculum</a>
+            <a href="#proyectos" className="btn btn-neutral mx-5">Mis proyectos</a>
           </div>
         </div>
         <div className="hidden md:flex h-full w-6/12 flex-col p-32 gap-5">

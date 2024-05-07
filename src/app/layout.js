@@ -40,6 +40,13 @@ export default function RootLayout({ children }) {
           __html: JSON.stringify(jsonLd),
         }}
       />
+      <Script
+        id="og-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(metadata.openGraph),
+        }}
+      />
         {children}
         </body>
     </html>
