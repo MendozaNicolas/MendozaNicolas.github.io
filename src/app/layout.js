@@ -9,7 +9,7 @@ export const metadata = {
   },
   openGraph: {
     title: "mendoza.dev | Porfolio",
-    image: 'https://mendozanicolas.github.io/projects/ogImage.png'
+    image: 'https://mendozanicolas.github.io/projects/opengraph-image.png'
   }
 };
 
