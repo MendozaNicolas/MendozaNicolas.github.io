@@ -1,0 +1,563 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="mendoza.dev | Porfolio">
+	<main class="bg-base-200 overflow-x-hidden">
+		<section
+			class="w-screen h-screen flex flex-row flex-wrap md:flex-nowrap"
+		>
+			<div
+				class="w-screen h-full flex flex-col p-10 gap-5 md:p-32 md:w-8/12"
+			>
+				<h1 class="text-2xl">
+					Hola soy, <br />
+					<span class="text-5xl text-pink-600 font-bold"
+						>Nicolás Mendoza</span>
+				</h1>
+				<p class="text-lg">
+					Saludos! Soy un apasionado desarrollador web full-stack con
+					más de seis meses de experiencia práctica. Disfruto
+					convirtiendo ideas en experiencias digitales perfectas. Con
+					experiencia en trabajo independiente, aporto una trayectoria
+					comprobada de mis aprendizajes y trabajos realizados.
+					¡Creemos algo extraordinario juntos!
+				</p>
+				<div>
+					<a href="/mendozaCV.pdf" class="btn btn-secondary mx-5"
+						>Curriculum</a
+					>
+					<a href="#proyectos" class="btn btn-neutral mx-5"
+						>Mis proyectos</a
+					>
+				</div>
+			</div>
+			<div class="hidden md:flex h-full w-6/12 flex-col p-32 gap-5">
+				<figure>
+					<img
+						src="/landing0.svg"
+						width={1000}
+						height={1000}
+						alt="A person coding"
+					/>
+				</figure>
+			</div>
+		</section>
+		<div class="w-full flex justify-center my-3">
+			<h2 id="proyectos" class="text-4xl">Experiencia Laboral</h2>
+		</div>
+		<section
+			class="w-screen p-5 flex flex-row flex-wrap gap-8 sm:justify-center sm:gap-10 md:p-20"
+		>
+			<div>
+				<div class="card w-96 bg-base-100 shadow-xl">
+					<figure>
+						<img
+							src="/projects/berisso.webp"
+							width={1000}
+							height={1000}
+							alt="Municipalidad de berisso"
+						/>
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title">Municipalidad de Berisso</h2>
+						<p>
+							Actualmente trabajo en la municipalidad de Berisso
+							como programador de sistemas municipales utilizando
+							Laravel, PHP, Bootstrap y JavaScript.
+						</p>
+						<b>Noviembre de 2023 - Actualmente</b>
+						<div class="card-actions mt-5">
+							<div
+								class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+							>
+								Laravel
+							</div>
+							<div
+								class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+							>
+								Bootstrap
+							</div>
+							<div
+								class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+							>
+								SCSS
+							</div>
+							<div
+								class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+							>
+								JavaScript
+							</div>
+							<div
+								class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+							>
+								PHP
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="w-full flex justify-center my-3">
+			<h2 id="proyectos" class="text-4xl">Mis proyectos</h2>
+		</div>
+		<section
+			class="w-screen p-5 flex flex-row flex-wrap gap-8 sm:justify-center sm:gap-10 md:p-20"
+		>
+			<div class="card w-96 bg-base-100 shadow-xl">
+				<figure>
+					<img
+						src="/projects/yam-landing.webp"
+						width={1000}
+						height={1000}
+						alt="Yet Another Minifier"
+					/>
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title">
+						Yet Another Minifier
+						<div class="badge badge-secondary">Nuevo</div>
+					</h2>
+					<p>
+						Minificador de archivos JS y CSS para optimizar el
+						rendimiento de las paginas.
+					</p>
+					<div class="card-actions">
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							NextJS
+						</div>
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							TailwindCSS
+						</div>
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							SCSS
+						</div>
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							JavaScript
+						</div>
+					</div>
+					<div class="card-actions justify-center mt-5">
+						<a
+							href="https://mendozanicolas.github.io/yet-another-minifier"
+							class="btn btn-primary">Ver proyecto</a
+						>
+						<a
+							href="https://github.com/MendozaNicolas/yet-another-minifier"
+							class="btn btn-primary">Ver código</a
+						>
+					</div>
+				</div>
+			</div>
+			<div class="card w-96 bg-base-100 shadow-xl">
+				<figure>
+					<img
+						src="/projects/capybara-landing.webp"
+						width={1000}
+						height={100}
+						alt="Capybara run"
+					/>
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title">CaPYbara run</h2>
+					<p>Juego creado en python utilizando la libreria pygame</p>
+					<div class="card-actions">
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							Python
+						</div>
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							Pygame
+						</div>
+					</div>
+					<div class="card-actions justify-center mt-5">
+						<a
+							href="https://github.com/MendozaNicolas/caPYbara-game"
+							class="btn btn-primary">Ver proyecto</a
+						>
+						<a
+							href="https://github.com/MendozaNicolas/caPYbara-game"
+							class="btn btn-primary">Ver código</a
+						>
+					</div>
+				</div>
+			</div>
+			<div class="card w-96 bg-base-100 shadow-xl">
+				<figure>
+					<img
+						src="/projects/rufus-landing.webp"
+						width={1000}
+						height={1000}
+						alt="Rufus Player"
+					/>
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title">
+						Rufus Player
+						<div class="badge badge-warning">Incompleto</div>
+					</h2>
+					<p>
+						Aplicacion Mobile creada en Flutter: Reproductor
+						multimedia que funciona mediante URL de Youtube
+					</p>
+					<div class="card-actions">
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							Flutter
+						</div>
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							Dart
+						</div>
+					</div>
+					<div class="card-actions justify-center mt-5">
+						<a
+							href="https://github.com/MendozaNicolas/rufus_player"
+							class="btn btn-primary">Ver proyecto</a
+						>
+						<a
+							href="https://github.com/MendozaNicolas/rufus_player"
+							class="btn btn-primary">Ver código</a
+						>
+					</div>
+				</div>
+			</div>
+			<div class="card w-96 bg-base-100 shadow-xl">
+				<figure>
+					<img
+						src="/projects/yeti-landing.webp"
+						width={1000}
+						height={1000}
+						alt="Yeti Heladeria"
+					/>
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title">Yeti Heladeria</h2>
+					<p>
+						Landing Page de heladeria hecha con ReactJS y Bootstrap
+					</p>
+					<div class="card-actions">
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							Bootstrap
+						</div>
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							SCSS
+						</div>
+					</div>
+					<div class="card-actions justify-center mt-5">
+						<a
+							href="https://mendozanicolas.github.io/yeti-app/"
+							class="btn btn-primary">Ver proyecto</a
+						>
+						<a
+							href="https://github.com/MendozaNicolas/yeti-app"
+							class="btn btn-primary">Ver código</a
+						>
+					</div>
+				</div>
+			</div>
+			<div class="card w-96 bg-base-100 shadow-xl">
+				<figure>
+					<img
+						src="/projects/ficus-landing.webp"
+						width={1000}
+						height={1000}
+						alt="Laravel Ficus"
+					/>
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title">Laravel Ficus</h2>
+					<p>
+						Yet another Laravel CRUD project, made from scratch with
+						Laravel.
+					</p>
+					<div class="card-actions">
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							Laravel
+						</div>
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							Bootstrap
+						</div>
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							PHP
+						</div>
+						<div
+							class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+						>
+							JavaScript
+						</div>
+					</div>
+					<div class="card-actions justify-center mt-5">
+						<a
+							href="https://mendozanicolas.github.io/laravel-ficus/"
+							class="btn btn-primary">Ver proyecto</a
+						>
+						<a
+							href="https://github.com/MendozaNicolas/laravel-ficus"
+							class="btn btn-primary">Ver código</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="w-full flex justify-center my-3">
+			<h2 class="text-4xl">Mis conocimientos</h2>
+		</div>
+		<section class="p-24 w-screen flex flex-row flex-wrap gap-10">
+			<div
+				class="hidden h-full w-screen justify-center flex-col gap-5 md:flex md:w-6/12 md:p-32"
+			>
+				<figure>
+					<img
+						src="/landing1.svg"
+						width={1000}
+						height={1000}
+						alt="A person coding"
+					/>
+				</figure>
+			</div>
+			<div
+				class="flex justify-center h-full w-screen flex-row gap-5 flex-wrap md:flex md:w-5/12 md:p-16"
+			>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/html.svg"
+							width={1000}
+							height={1000}
+							alt="HTML brand"
+							loading="lazy"
+							class="w-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">HTML</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/css.svg"
+							width={1000}
+							height={1000}
+							alt="CSS brand"
+							loading="lazy"
+							class="w-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">CSS</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/php.svg"
+							width={1000}
+							height={1000}
+							alt="PHP brand"
+							loading="lazy"
+							class="w-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">PHP</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/javascript.svg"
+							width={1000}
+							height={1000}
+							alt="Javascript brand"
+							loading="lazy"
+							class="w-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">JavaScript</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/tailwindcss.svg"
+							width={1000}
+							height={1000}
+							alt="Tailwindcss brand"
+							loading="lazy"
+							class="w-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">Tailwind</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/nodejs.svg"
+							width={1000}
+							height={1000}
+							alt="NodeJS brand"
+							loading="lazy"
+							class="w-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">NodeJS</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/bootstrap.svg"
+							width={1000}
+							height={1000}
+							alt="Bootstrap brand"
+							loading="lazy"
+							class="w-16 h-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">Bootstrap</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/nextjs.svg"
+							width={1000}
+							height={1000}
+							alt="NextJS brand"
+							loading="lazy"
+							class="w-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">NextJS</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/laravel.svg"
+							width={1000}
+							height={1000}
+							alt="Laravel brand"
+							loading="lazy"
+							class="w-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">Laravel</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/git.svg"
+							width={1000}
+							height={1000}
+							alt="Git brand"
+							loading="lazy"
+							class="w-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">Git</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/flutter.svg"
+							width={1000}
+							height={1000}
+							alt="Flutter brand"
+							loading="lazy"
+							class="w-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">Flutter</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/dart.svg"
+							width={1000}
+							height={1000}
+							alt="Dart brand"
+							loading="lazy"
+							class="w-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">Dart</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/python.svg"
+							width={1000}
+							height={1000}
+							alt="Python brand"
+							loading="lazy"
+							class="w-12 h-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">Python</p>
+				</div>
+				<div
+					class="flex flex-col items-center gap-4 select-none grayscale hover:grayscale-0"
+				>
+					<figure>
+						<img
+							src="/skills/unity.svg"
+							width={1000}
+							height={1000}
+							alt="Unity brand"
+							loading="lazy"
+							class="w-14 aspect-square"
+						/>
+					</figure>
+					<p class="text-center">Unity</p>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="flex items-center justify-center p-5">
+				<span>❤ Hecho con amor por Nicolás Mendoza. ❤</span>
+			</div>
+		</footer>
+	</main>
+</Layout>
