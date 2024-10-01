@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="mendoza.dev | Porfolio">
+  <main class="bg-base-200 overflow-x-hidden">
+    <section
+      class="w-screen p-5 flex flex-row flex-wrap gap-8 sm:justify-center sm:gap-10 md:p-20"
+    >
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="/projects/gamar/mieres-landing.webp"
+            width={1000}
+            height={1000}
+            alt="Vicejefatura de Gabinete del Interior"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Inmobiliaria mieres.com.ar</h2>
+          <p>
+            Inmobliaria de zona norte de Buenos Aires. Desarrollada con Laravel
+            y JQuery. Actualmente operativa y en constante mantenimiento.
+          </p>
+          <div class="card-actions mt-5">
+            <div
+              class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+            >
+              Laravel
+            </div>
+            <div
+              class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+            >
+              JQuery
+            </div>
+            <div
+              class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+            >
+              JavaScript
+            </div>
+            <div
+              class="badge hover:badge-secondary hover:badge-outline badge-outline select-none"
+            >
+              PHP
+            </div>
+          </div>
+          <div class="card-actions justify-center mt-5">
+            <a
+              href="https://mieres.com.ar"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary">Visitar página web</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="flex items-center justify-center p-5">
+      <span>❤ Hecho con amor por Nicolás Mendoza. ❤</span>
+    </div>
+  </footer>
+</Layout>
